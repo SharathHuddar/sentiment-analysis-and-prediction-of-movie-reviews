@@ -24,6 +24,7 @@ def preprocessor(text):
 
 df['review'] = df['review'].apply(preprocessor)
 
+nltk.download('stopwords')
 
 porter = PorterStemmer()
 
