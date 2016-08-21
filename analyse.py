@@ -1,5 +1,6 @@
 import pandas as pd
 import re
+import nltk
 from nltk.stem.porter import PorterStemmer
 from nltk.corpus import stopwords
 from sklearn.grid_search import GridSearchCV
