@@ -58,10 +58,10 @@ X_test = df.loc[25000:, 'review'].values
 y_test = df.loc[25000:, 'sentiment'].values
 '''
 
-X_train = df.loc[:250, 'review'].values
-y_train = df.loc[:250, 'sentiment'].values
-X_test = df.loc[250:, 'review'].values
-y_test = df.loc[250:, 'sentiment'].values
+X_train = df.loc[:25, 'review'].values
+y_train = df.loc[:25, 'sentiment'].values
+X_test = df.loc[25:, 'review'].values
+y_test = df.loc[25:, 'sentiment'].values
 
 
 tfidf = TfidfVectorizer(strip_accents=None,
