@@ -51,7 +51,7 @@ def tokenizer_stemmer(text):
 
 stop = stopwords.words('english')
 
-
+'''
 X_train = df.loc[:25000, 'review'].values
 y_train = df.loc[:25000, 'sentiment'].values
 X_test = df.loc[25000:, 'review'].values
@@ -60,19 +60,9 @@ y_test = df.loc[25000:, 'sentiment'].values
 
 X_train = df.loc[:25, 'review'].values
 y_train = df.loc[:25, 'sentiment'].values
-<<<<<<< HEAD
-X_test = df.loc[25:50, 'review'].values
-y_test = df.loc[25:50, 'sentiment'].values
-'''
-||||||| e1a9d3d... Fix build error
 X_test = df.loc[25:50, 'review'].values
 y_test = df.loc[25:50, 'sentiment'].values
 
-=======
-X_test = df.loc[25:, 'review'].values
-y_test = df.loc[25:, 'sentiment'].values
-
->>>>>>> parent of e1a9d3d... Fix build error
 
 tfidf = TfidfVectorizer(strip_accents=None,
                         lowercase=False,
