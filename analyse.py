@@ -51,7 +51,7 @@ def tokenizer_stemmer(text):
 
 stop = stopwords.words('english')
 
-'''
+
 X_train = df.loc[:25000, 'review'].values
 y_train = df.loc[:25000, 'sentiment'].values
 X_test = df.loc[25000:, 'review'].values
@@ -62,7 +62,7 @@ X_train = df.loc[:25, 'review'].values
 y_train = df.loc[:25, 'sentiment'].values
 X_test = df.loc[25:50, 'review'].values
 y_test = df.loc[25:50, 'sentiment'].values
-
+'''
 
 tfidf = TfidfVectorizer(strip_accents=None,
                         lowercase=False,
